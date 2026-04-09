@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card" id="proposal-card">
+      <div class="halo halo-left"></div>
+      <div class="halo halo-right"></div>
+
+      <p class="eyebrow">A tiny question with a very important answer</p>
+      <h1 class="title">Will you be my valentine?</h1>
+
+      <div class="illustration" aria-hidden="true">
+        <div class="heart heart-a"></div>
+        <div class="heart heart-b"></div>
+        <div class="envelope">
+          <span class="seal"></span>
+        </div>
+      </div>
+
+      <div class="button-stage" id="button-stage">
+        <button class="choice choice-yes" id="yes-button" type="button">Yes, absolutely</button>
+        <button class="choice choice-no" id="no-button" type="button">No</button>
+      </div>
+    </section>
+
+    <section class="card celebration hidden" id="celebration-card" aria-live="polite">
+      <p class="eyebrow">Correct answer unlocked</p>
+      <h2 class="title">You made the best choice</h2>
+      <p class="subtitle">
+        Officially the sweetest decision ever. A little music, a little romance, and a lot of happy heart energy.
+      </p>
+
+      <div class="celebration-art" aria-hidden="true">
+        <svg viewBox="0 0 320 220" class="love-svg" role="img">
+          <defs>
+            <linearGradient id="heartGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff9db4"></stop>
+              <stop offset="100%" stop-color="#ff5f87"></stop>
+            </linearGradient>
+            <linearGradient id="speakerBody" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff1f5"></stop>
+              <stop offset="100%" stop-color="#ffd5df"></stop>
+            </linearGradient>
+          </defs>
+          <circle cx="160" cy="110" r="90" fill="#fff4f2"></circle>
+          <path d="M94 111h38l36-29v58l-36-29H94c-11 0-20-9-20-20s9-20 20-20Z" fill="url(#speakerBody)" stroke="#d64f74" stroke-width="6" stroke-linejoin="round"></path>
+          <path d="M198 91c18 8 27 20 27 36 0 16-9 28-27 36" fill="none" stroke="#d64f74" stroke-width="6" stroke-linecap="round"></path>
+          <path d="M215 75c28 14 43 35 43 52 0 17-15 38-43 52" fill="none" stroke="#ff8ca6" stroke-width="6" stroke-linecap="round"></path>
+          <path d="M115 42c10-15 33-16 43 1 10-17 33-16 43-1 11 15 3 34-15 49l-28 23-28-23c-18-15-26-34-15-49Z" fill="url(#heartGlow)"></path>
+          <path d="M247 138c8-11 25-12 32 1 8-13 24-12 32-1 8 11 2 24-11 35l-21 17-21-17c-13-11-19-24-11-35Z" fill="#ff7c9c"></path>
+          <path d="M53 59c7-10 21-11 28 0 7-11 22-10 28 0 7 10 2 22-10 31l-18 14-18-14C51 81 46 69 53 59Z" fill="#ffb5c6"></path>
+        </svg>
+      </div>
+      <button class="send-button" id="restart-button" type="button">Ask again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
